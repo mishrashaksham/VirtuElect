@@ -81,7 +81,7 @@ const EVMSimulator = () => {
   return (
     <section className="w-full max-w-5xl mx-auto py-16 px-10 scroll-animate">
       <div className="text-center mb-12">
-        <h2 className="font-[var(--font-display-xl)] text-[40px] text-gray-900 dark:text-gray-100 mb-2">{t('Live Simulator')}</h2>
+        <h2 className="font-[var(--font-display-xl)] text-[40px] text-gray-900 dark:text-gray-100 mb-2">{t('EVM Simulator')}</h2>
         <p className="font-[var(--font-body-lg)] text-gray-600 dark:text-gray-400">{t('Interact with the simulated hardware units below.')}</p>
       </div>
 
