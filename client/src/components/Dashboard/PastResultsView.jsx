@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import API_BASE_URL from '../../config';
 import useAppStore from '../../store/appStore';
 import { useTranslate } from '../../context/TranslationContext';
 
@@ -12,7 +13,7 @@ const PastResultsView = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await axios.get(`https://virtuelect-backend.onrender.com/api/candidates/${constituency.id}/results`);
+        const response = await axios.get(`${API_BASE_URL}/api/candidates/${constituency.id}/results`);
         setResults(response.data.results || []);
       } catch (error) {
         console.error("Error fetching past results:", error);

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_BASE_URL from '../../config';
 import useAppStore from '../../store/appStore';
 
 const ManualSelectionView = () => {
@@ -13,7 +14,7 @@ const ManualSelectionView = () => {
     // Fetch all available constituencies
     const fetchConstituencies = async () => {
       try {
-        const res = await axios.get('https://virtuelect-backend.onrender.com/api/geo/constituencies');
+        const res = await axios.get(`${API_BASE_URL}/api/geo/constituencies`);
         if (res.data.success) {
           const data = res.data.constituencies;
           // Group by state
@@ -37,7 +38,7 @@ const ManualSelectionView = () => {
     if (!selectedConstituency) return;
     
     try {
-      const res = await axios.get(`https://virtuelect-backend.onrender.com/api/candidates/${selectedConstituency}`);
+      const res = await axios.get(`${API_BASE_URL}/api/candidates/${selectedConstituency}`);
       if (res.data.success) {
         setConstituencyData({
           constituency: res.data.constituency,

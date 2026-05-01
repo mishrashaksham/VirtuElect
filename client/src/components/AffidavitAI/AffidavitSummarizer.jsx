@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
+import API_BASE_URL from '../../config';
 import useAppStore from '../../store/appStore';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -35,7 +36,7 @@ const AffidavitSummarizer = ({ candidate, onClose }) => {
       setLoading(true);
       setError(null);
       try {
-        const response = await axios.post('https://virtuelect-backend.onrender.com/api/ai/summarize', {
+        const response = await axios.post(`${API_BASE_URL}/api/ai/summarize`, {
           candidateId: candidate.id,
           language: language
         });

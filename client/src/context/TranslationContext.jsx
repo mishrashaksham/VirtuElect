@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import API_BASE_URL from '../config';
 
 const TranslationContext = createContext();
 
@@ -14,7 +15,7 @@ export const TranslationProvider = ({ children }) => {
       setDictionary({});
       return;
     }
-    axios.get(`https://virtuelect-backend.onrender.com/api/translate/dict?lang=${lang}`)
+    axios.get(`${API_BASE_URL}/api/translate/dict?lang=${lang}`)
       .then(res => {
         if (res.data && !res.data.error) setDictionary(res.data);
       })

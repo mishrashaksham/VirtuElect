@@ -48,6 +48,7 @@ app.use('/api/geo',        require('./routes/geo'));
 app.use('/api/translate',  require('./routes/translate'));
 app.use('/api/candidates', require('./routes/candidates'));
 app.use('/api/ai',         require('./routes/ai'));
+app.use('/api/chat',       require('./routes/chat'));
 
 // ── 404 Handler ────────────────────────────────────────────────────────────────
 app.use((req, res) => {

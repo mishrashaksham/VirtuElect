@@ -14,7 +14,7 @@ const CandidateCard = ({ candidate, onShowSummary }) => {
   };
 
   return (
-    <div className="glass-panel p-6 w-full max-w-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col justify-between border-t-4" style={{ borderTopColor: candidate.partyColor || 'var(--primary-blue)' }}>
+    <div className="glass-panel p-6 w-full transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col justify-between border-t-4" style={{ borderTopColor: candidate.partyColor || 'var(--primary-blue)' }}>
       <div className="flex justify-between items-start">
         <div>
           <h3 className="text-2xl font-bold mb-1">{candidate.name}</h3>
