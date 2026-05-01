@@ -30,11 +30,3 @@ VirtuElect is a high-fidelity digital platform designed to simulate the Indian e
 *   Custom In-Memory Vector Store for RAG (Retrieval-Augmented Generation)
 
 ---
-
-## 🚀 Getting Started
-
-Follow these steps to run the project locally on your machine.
-
-### Prerequisites
-*   [Node.js](https://nodejs.org/) installed
-*   A valid Google Gemini API Key
