@@ -67,7 +67,7 @@ app.listen(PORT, () => {
 
   // FIX: initializeStore errors are now fully handled inside ragService itself.
   // The .catch here is a final safety net — it logs but never crashes the server.
-  require('./services/ragService').initializeStore()
-    .then(() => console.log('[Server] RAG store ready.'))
-    .catch((err) => console.error('[Server] RAG initialization failed (non-fatal):', err.message));
+  // require('./services/ragService').initializeStore()
+  //   .then(() => console.log('[Server] RAG store ready.'))
+  //   .catch((err) => console.error('[Server] RAG initialization failed (non-fatal):', err.message));
 });
