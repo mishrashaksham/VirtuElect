@@ -43,6 +43,7 @@ const GyaniBanner = () => {
             <button
               id="gyani-cta-btn"
               onClick={() => navigate('/chat')}
+              aria-label="Open Gyani-ElectionBuddy AI chat"
               className="group relative px-7 py-4 rounded-2xl bg-[var(--color-primary)] text-white font-bold text-sm tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] cursor-pointer whitespace-nowrap"
             >
               <span className="relative z-10 flex items-center gap-2">

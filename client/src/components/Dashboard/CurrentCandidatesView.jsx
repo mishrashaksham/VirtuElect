@@ -17,7 +17,7 @@ const CurrentCandidatesView = () => {
     <div className="w-full max-w-6xl mx-auto py-8 px-4 relative">
       <div className="mb-8 text-center">
         <h2 className="text-4xl font-bold mb-2">{t('Candidates for')} {constituency.name}</h2>
-        <p className="text-xl text-text-secondary">{t('Lok Sabha Election')} {constituency.electionYear || new Date().getFullYear()}</p>
+        <p className="text-xl text-text-secondary">{t('Lok Sabha Election')} 2026</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">

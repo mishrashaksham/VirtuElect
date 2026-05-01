@@ -238,3 +238,9 @@ html:not(.dark) #root {
 html:not(.dark) h2, html:not(.dark) h3 {
     color: #0f172a !important;
 }
+
+/* Accessibility: High-visibility focus states */
+*:focus {
+  outline: 3px solid #7c3aed;
+  outline-offset: 2px;
+}

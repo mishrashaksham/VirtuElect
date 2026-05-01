@@ -7,7 +7,7 @@ const Header = () => {
   const { t } = useTranslate();
 
   return (
-    <header className="bg-gray-100/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl flex justify-between items-center h-16 px-8 mx-auto w-full sticky top-0 z-50 border-b border-black/5 dark:border-white/5 shadow-sm transition-colors duration-300">
+    <header role="navigation" className="bg-gray-100/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl flex justify-between items-center h-16 px-8 mx-auto w-full sticky top-0 z-50 border-b border-black/5 dark:border-white/5 shadow-sm transition-colors duration-300">
       <div className="flex items-center gap-8">
         <h1 className="text-xl font-black tracking-tighter text-gray-900 dark:text-gray-100 uppercase font-display-xl">
           {t('VirtuElect')}

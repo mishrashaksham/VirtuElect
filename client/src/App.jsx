@@ -107,7 +107,7 @@ function App() {
             <>
               <Header />
               <Home />
-              <footer className="w-full py-8 px-12 flex justify-between items-center max-w-[1440px] mx-auto bg-transparent z-10 relative mt-auto border-t border-black/5 dark:border-white/5">
+              <footer role="contentinfo" className="w-full py-8 px-12 flex justify-between items-center max-w-[1440px] mx-auto bg-transparent z-10 relative mt-auto border-t border-black/5 dark:border-white/5">
                 <p className="font-['Inter'] text-[10px] text-gray-500 dark:text-[var(--color-outline)] uppercase tracking-widest">
                   © 2024 Election Dynamics. {t('High-Fidelity Simulation Protocol')}
                 </p>

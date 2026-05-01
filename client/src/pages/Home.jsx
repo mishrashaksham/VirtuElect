@@ -10,7 +10,7 @@ const Home = () => {
   const { t } = useTranslate();
 
   return (
-    <main className="flex-1 flex flex-col items-center w-full pb-20 z-10 relative">
+    <main role="main" className="flex-1 flex flex-col items-center w-full pb-20 z-10 relative">
 
       {/* ── Hero Section ─────────────────────────────────────────────────── */}
       <section className="min-h-[80vh] flex flex-col items-center justify-center p-10 w-full scroll-animate">

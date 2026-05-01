@@ -45,6 +45,7 @@ const CandidateCard = ({ candidate, onShowSummary }) => {
 
       <button 
         onClick={() => onShowSummary(candidate)}
+        aria-label={`View AI affidavit summary for ${candidate.name}`}
         className="btn-primary mt-auto flex items-center justify-center gap-2"
       >
         <span>✨</span> {t('View AI Summary')}
