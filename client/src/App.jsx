@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Header from './components/shared/Header';
 import EVMSimulator from './components/EVM/EVMSimulator';
 import VoterJourney from './components/Journey/VoterJourney';
+import ElectionProcessTimeline from './components/Journey/ElectionProcessTimeline';
 import KnowYourCandidate from './components/Dashboard/KnowYourCandidate';
 import useAppStore from './store/appStore';
 import { useTranslate } from './context/TranslationContext';
@@ -144,6 +145,8 @@ function App() {
             </p>
           </div>
         </section>
+
+        <ElectionProcessTimeline />
 
         <VoterJourney />
 
