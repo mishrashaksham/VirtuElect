@@ -12,7 +12,7 @@ const PastResultsView = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/candidates/${constituency.id}/results`);
+        const response = await axios.get(`https://virtuelect-backend.onrender.com/api/candidates/${constituency.id}/results`);
         setResults(response.data.results || []);
       } catch (error) {
         console.error("Error fetching past results:", error);

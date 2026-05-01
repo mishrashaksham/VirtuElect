@@ -14,7 +14,7 @@ export const TranslationProvider = ({ children }) => {
       setDictionary({});
       return;
     }
-    axios.get(`http://localhost:3001/api/translate/dict?lang=${lang}`)
+    axios.get(`https://virtuelect-backend.onrender.com/api/translate/dict?lang=${lang}`)
       .then(res => {
         if (res.data && !res.data.error) setDictionary(res.data);
       })

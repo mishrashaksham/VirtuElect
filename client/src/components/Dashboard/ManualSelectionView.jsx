@@ -13,7 +13,7 @@ const ManualSelectionView = () => {
     // Fetch all available constituencies
     const fetchConstituencies = async () => {
       try {
-        const res = await axios.get('http://localhost:3001/api/geo/constituencies');
+        const res = await axios.get('https://virtuelect-backend.onrender.com/api/geo/constituencies');
         if (res.data.success) {
           const data = res.data.constituencies;
           // Group by state
@@ -37,7 +37,7 @@ const ManualSelectionView = () => {
     if (!selectedConstituency) return;
     
     try {
-      const res = await axios.get(`http://localhost:3001/api/candidates/${selectedConstituency}`);
+      const res = await axios.get(`https://virtuelect-backend.onrender.com/api/candidates/${selectedConstituency}`);
       if (res.data.success) {
         setConstituencyData({
           constituency: res.data.constituency,

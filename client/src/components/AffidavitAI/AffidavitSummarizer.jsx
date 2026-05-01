@@ -35,7 +35,7 @@ const AffidavitSummarizer = ({ candidate, onClose }) => {
       setLoading(true);
       setError(null);
       try {
-        const response = await axios.post('http://localhost:3001/api/ai/summarize', {
+        const response = await axios.post('https://virtuelect-backend.onrender.com/api/ai/summarize', {
           candidateId: candidate.id,
           language: language
         });
