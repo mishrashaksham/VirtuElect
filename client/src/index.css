@@ -1,0 +1,240 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+@theme {
+  --color-secondary-fixed: #c9e6ff;
+  --color-surface-container-lowest: #100d16;
+  --color-on-primary: #3f008e;
+  --color-on-tertiary-fixed-variant: #713700;
+  --color-surface-tint: #d2bbff;
+  --color-on-secondary-fixed-variant: #004c6e;
+  --color-on-secondary-container: #00344e;
+  --color-secondary: #89ceff;
+  --color-primary-fixed: #eaddff;
+  --color-error-container: #93000a;
+  --color-primary-fixed-dim: #d2bbff;
+  --color-surface-dim: #15121b;
+  --color-primary-container: #7c3aed;
+  --color-surface-container: #221e28;
+  --color-on-tertiary: #4f2500;
+  --color-surface-container-high: #2c2833;
+  --color-secondary-fixed-dim: #89ceff;
+  --color-surface-container-highest: #37333e;
+  --color-tertiary: #ffb784;
+  --color-on-background: #e8dfee;
+  --color-on-surface: #e8dfee;
+  --color-secondary-container: #00a2e6;
+  --color-on-primary-fixed-variant: #5a00c6;
+  --color-on-secondary: #00344d;
+  --color-on-error: #690005;
+  --color-on-secondary-fixed: #001e2f;
+  --color-background: #15121b;
+  --color-surface-bright: #3c3742;
+  --color-on-tertiary-container: #ffe0cd;
+  --color-inverse-on-surface: #332f39;
+  --color-inverse-primary: #732ee4;
+  --color-on-primary-container: #ede0ff;
+  --color-surface-container-low: #1d1a24;
+  --color-tertiary-fixed: #ffdcc6;
+  --color-primary: #d2bbff;
+  --color-tertiary-fixed-dim: #ffb784;
+  --color-outline-variant: #4a4455;
+  --color-on-primary-fixed: #25005a;
+  --color-on-error-container: #ffdad6;
+  --color-on-tertiary-fixed: #301400;
+  --color-surface-variant: #37333e;
+  --color-error: #ffb4ab;
+  --color-on-surface-variant: #ccc3d8;
+  --color-outline: #958da1;
+  --color-tertiary-container: #a15100;
+  --color-surface: #15121b;
+  --color-inverse-surface: #e8dfee;
+
+  --spacing-unit: 4px;
+  --spacing-container-max: 1440px;
+  --spacing-xl: 4rem;
+  --spacing-xs: 0.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-gutter: 24px;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+
+  --font-body-md: 'Inter', sans-serif;
+  --font-stats-number: 'Inter', sans-serif;
+  --font-display-xl: 'Inter', sans-serif;
+  --font-label-caps: 'Inter', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-headline-md: 'Inter', sans-serif;
+  --font-headline-lg: 'Inter', sans-serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────────── */
+body {
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── LIGHT MODE (default) ─────────────────────────────────────────────────────── */
+/* FIX: Single clean definition. No !important wars. */
+:root:not(.dark),
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Light mode: neumorphic raised — slate-toned, not white-on-white */
+html:not(.dark) .neu-raised {
+  background-color: #eef2f7;
+  box-shadow: 6px 6px 14px #c8d0db, -6px -6px 14px #ffffff;
+}
+
+html:not(.dark) .neu-inset {
+  background-color: #eef2f7;
+  box-shadow: inset 4px 4px 10px #c8d0db, inset -4px -4px 10px #ffffff;
+}
+
+/* Light mode text: do NOT use !important on p/span globally — it breaks
+   component-level overrides. Use specific selectors instead. */
+html:not(.dark) .text-gray-600 { color: #475569; }
+html:not(.dark) .text-gray-700 { color: #334155; }
+html:not(.dark) .text-gray-400 { color: #64748b; }
+html:not(.dark) .text-gray-500 { color: #64748b; }
+
+/* Light mode glass panel: translucent white over the #f8fafc bg = readable */
+html:not(.dark) .glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #0f172a;
+}
+
+/* Light mode LCD screen */
+html:not(.dark) .lcd-screen {
+  background: #e2e8f0;
+  box-shadow: inset 2px 2px 5px rgba(163, 177, 198, 0.6), inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+  color: #0284c7;
+}
+
+/* ── DARK MODE ────────────────────────────────────────────────────────────────── */
+.dark body {
+  background-color: #0A0A0A;
+  color: #e8dfee;
+}
+
+/* Dark neumorphic — deep shadows only, no radioactive glow */
+.dark .neu-raised {
+  background-color: #151515;
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.95), -8px -8px 18px rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dark .neu-inset {
+  background-color: #151515;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.9), inset -4px -4px 10px rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Dark glass panel */
+.dark .glass-panel {
+  background: rgba(15, 15, 15, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Dark LCD screen */
+.dark .lcd-screen {
+  background: #050505;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px -2px 5px rgba(255, 255, 255, 0.05);
+  color: #89ceff;
+}
+
+/* ── Shared component styles ─────────────────────────────────────────────────── */
+
+/* Neumorphic base (light fallback — overridden above per mode) */
+.neu-raised {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.neu-inset {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.lcd-screen {
+  font-family: 'Courier New', Courier, monospace;
+  transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Glass panel shared */
+.glass-panel {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.glass-panel:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.dark .glass-panel:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55);
+}
+
+/* ── Cursor Aura ─────────────────────────────────────────────────────────────── */
+/* FIX: Remove conflicting z-index. The aura div in App.jsx uses
+   `fixed z-0` via Tailwind — CSS here must not override to z:-1 */
+#cursor-aura {
+  width: 600px;
+  height: 600px;
+  filter: blur(80px);
+  position: fixed;
+  pointer-events: none;
+  /* z-index intentionally NOT set here — controlled by Tailwind class in JSX */
+  transform: translate(-50%, -50%);
+  transition: left 0.08s linear, top 0.08s linear, background 0.3s ease;
+  will-change: left, top; /* GPU-hint for smoother tracking */
+}
+
+html:not(.dark) #cursor-aura {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, rgba(137, 206, 255, 0.1) 45%, transparent 70%);
+}
+
+.dark #cursor-aura {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.35) 0%, rgba(137, 206, 255, 0.15) 40%, transparent 70%);
+}
+
+/* ── Scroll Animations ───────────────────────────────────────────────────────── */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Timeline Flowchart ──────────────────────────────────────────────────────── */
+.timeline-node::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: rgba(124, 58, 237, 0.3);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.timeline-node:last-child::before {
+  display: none;
+}
+/* 🚨 FORCE BRIGHT MODE BACKGROUND */
+html:not(.dark), 
+html:not(.dark) body, 
+html:not(.dark) #root {
+    background-color: #f8fafc !important;
+}
+
+html:not(.dark) h2, html:not(.dark) h3 {
+    color: #0f172a !important;
+}

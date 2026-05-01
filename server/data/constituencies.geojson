@@ -1,0 +1,198 @@
+{
+  "type": "FeatureCollection",
+  "_note": "Demo-only approximate boundaries. 8 major Indian Parliamentary Constituencies.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "new-delhi-pc",
+        "name": "New Delhi",
+        "state": "Delhi",
+        "stateCode": "DL",
+        "type": "PC",
+        "number": 14,
+        "electionDate": "2026-06-10",
+        "lastElectionDate": "2024-05-25",
+        "scenario": "near"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [76.9000, 28.5000],
+          [77.3500, 28.5000],
+          [77.3500, 28.7500],
+          [76.9000, 28.7500],
+          [76.9000, 28.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mumbai-south-pc",
+        "name": "Mumbai South",
+        "state": "Maharashtra",
+        "stateCode": "MH",
+        "type": "PC",
+        "number": 22,
+        "electionDate": "2029-04-15",
+        "lastElectionDate": "2024-05-20",
+        "scenario": "far"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [72.8000, 18.8500],
+          [72.9800, 18.8500],
+          [72.9800, 19.0600],
+          [72.8000, 19.0600],
+          [72.8000, 18.8500]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bengaluru-central-pc",
+        "name": "Bengaluru Central",
+        "state": "Karnataka",
+        "stateCode": "KA",
+        "type": "PC",
+        "number": 25,
+        "electionDate": "2026-04-29",
+        "lastElectionDate": "2024-04-26",
+        "scenario": "ongoing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.5400, 12.9000],
+          [77.6600, 12.9000],
+          [77.6600, 13.0500],
+          [77.5400, 13.0500],
+          [77.5400, 12.9000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hyderabad-pc",
+        "name": "Hyderabad",
+        "state": "Telangana",
+        "stateCode": "TS",
+        "type": "PC",
+        "number": 9,
+        "electionDate": "2029-05-01",
+        "lastElectionDate": "2024-05-13",
+        "scenario": "far"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [78.3800, 17.3000],
+          [78.6200, 17.3000],
+          [78.6200, 17.5500],
+          [78.3800, 17.5500],
+          [78.3800, 17.3000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chennai-central-pc",
+        "name": "Chennai Central",
+        "state": "Tamil Nadu",
+        "stateCode": "TN",
+        "type": "PC",
+        "number": 5,
+        "electionDate": "2029-04-19",
+        "lastElectionDate": "2024-04-19",
+        "scenario": "far"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [80.1800, 12.9800],
+          [80.3200, 12.9800],
+          [80.3200, 13.1400],
+          [80.1800, 13.1400],
+          [80.1800, 12.9800]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kolkata-north-pc",
+        "name": "Kolkata North",
+        "state": "West Bengal",
+        "stateCode": "WB",
+        "type": "PC",
+        "number": 22,
+        "electionDate": "2029-05-07",
+        "lastElectionDate": "2024-05-07",
+        "scenario": "far"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [88.3000, 22.5000],
+          [88.4600, 22.5000],
+          [88.4600, 22.6500],
+          [88.3000, 22.6500],
+          [88.3000, 22.5000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pune-pc",
+        "name": "Pune",
+        "state": "Maharashtra",
+        "stateCode": "MH",
+        "type": "PC",
+        "number": 21,
+        "electionDate": "2026-07-15",
+        "lastElectionDate": "2024-05-07",
+        "scenario": "near"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.7800, 18.4600],
+          [73.9600, 18.4600],
+          [73.9600, 18.6200],
+          [73.7800, 18.6200],
+          [73.7800, 18.4600]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ahmedabad-east-pc",
+        "name": "Ahmedabad East",
+        "state": "Gujarat",
+        "stateCode": "GJ",
+        "type": "PC",
+        "number": 18,
+        "electionDate": "2029-04-23",
+        "lastElectionDate": "2024-04-23",
+        "scenario": "far"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [72.6400, 22.9800],
+          [72.8200, 22.9800],
+          [72.8200, 23.1200],
+          [72.6400, 23.1200],
+          [72.6400, 22.9800]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "new-delhi-pc": [
+    { "year": 2024, "winner": "Bansuri Swaraj", "party": "BJP", "partyColor": "#FF9933", "votes": 467082, "margin": 78370, "turnout": "54.68%", "runner_up": "Somnath Bharti", "runner_up_party": "AAP" },
+    { "year": 2019, "winner": "Meenakshi Lekhi", "party": "BJP", "partyColor": "#FF9933", "votes": 661279, "margin": 261222, "turnout": "60.21%", "runner_up": "Ajay Maken", "runner_up_party": "INC" },
+    { "year": 2014, "winner": "Meenakshi Lekhi", "party": "BJP", "partyColor": "#FF9933", "votes": 546659, "margin": 162836, "turnout": "64.94%", "runner_up": "Ajay Maken", "runner_up_party": "INC" },
+    { "year": 2009, "winner": "Ajay Maken", "party": "INC", "partyColor": "#00BFFF", "votes": 412734, "margin": 83607, "turnout": "51.81%", "runner_up": "V.K. Malhotra", "runner_up_party": "BJP" }
+  ],
+  "mumbai-south-pc": [
+    { "year": 2024, "winner": "Arvind Sawant", "party": "SHS-UBT", "partyColor": "#FF6600", "votes": 454543, "margin": 52674, "turnout": "50.12%", "runner_up": "Yamini Jadhav", "runner_up_party": "SHS" },
+    { "year": 2019, "winner": "Arvind Sawant", "party": "SHS", "partyColor": "#FF6600", "votes": 497677, "margin": 100067, "turnout": "52.38%", "runner_up": "Milind Deora", "runner_up_party": "INC" },
+    { "year": 2014, "winner": "Arvind Sawant", "party": "SHS", "partyColor": "#FF6600", "votes": 394652, "margin": 128028, "turnout": "53.11%", "runner_up": "Milind Deora", "runner_up_party": "INC" }
+  ],
+  "bengaluru-central-pc": [
+    { "year": 2024, "winner": "P. C. Mohan", "party": "BJP", "partyColor": "#FF9933", "votes": 598432, "margin": 27942, "turnout": "54.15%", "runner_up": "Mansoor Ali Khan", "runner_up_party": "INC" },
+    { "year": 2019, "winner": "P. C. Mohan", "party": "BJP", "partyColor": "#FF9933", "votes": 726984, "margin": 73813, "turnout": "53.66%", "runner_up": "Rizwan Arshad", "runner_up_party": "INC" },
+    { "year": 2014, "winner": "P. C. Mohan", "party": "BJP", "partyColor": "#FF9933", "votes": 568879, "margin": 149045, "turnout": "55.47%", "runner_up": "Nandan Nilekani", "runner_up_party": "INC" }
+  ],
+  "hyderabad-pc": [
+    { "year": 2024, "winner": "Asaduddin Owaisi", "party": "AIMIM", "partyColor": "#008000", "votes": 556892, "margin": 338087, "turnout": "48.90%", "runner_up": "Madhavi Latha", "runner_up_party": "BJP" },
+    { "year": 2019, "winner": "Asaduddin Owaisi", "party": "AIMIM", "partyColor": "#008000", "votes": 515868, "margin": 282186, "turnout": "44.84%", "runner_up": "Bhagavanth Rao", "runner_up_party": "BJP" },
+    { "year": 2014, "winner": "Asaduddin Owaisi", "party": "AIMIM", "partyColor": "#008000", "votes": 478232, "margin": 202143, "turnout": "53.24%", "runner_up": "Sardar Narsing Rao", "runner_up_party": "BJP" }
+  ],
+  "chennai-central-pc": [
+    { "year": 2024, "winner": "Dayanidhi Maran", "party": "DMK", "partyColor": "#E30613", "votes": 502341, "margin": 148932, "turnout": "55.43%", "runner_up": "Vinoj P. Selvam", "runner_up_party": "AIADMK" },
+    { "year": 2019, "winner": "Dayanidhi Maran", "party": "DMK", "partyColor": "#E30613", "votes": 489264, "margin": 154567, "turnout": "58.82%", "runner_up": "Sam Paul", "runner_up_party": "AIADMK" },
+    { "year": 2014, "winner": "S.R. Vijayakumar", "party": "AIADMK", "partyColor": "#1B8D38", "votes": 378923, "margin": 88431, "turnout": "62.11%", "runner_up": "Dayanidhi Maran", "runner_up_party": "DMK" }
+  ],
+  "kolkata-north-pc": [
+    { "year": 2024, "winner": "Sudip Bandyopadhyay", "party": "AITC", "partyColor": "#20C646", "votes": 482341, "margin": 102983, "turnout": "60.12%", "runner_up": "Tapas Roy", "runner_up_party": "BJP" },
+    { "year": 2019, "winner": "Sudip Bandyopadhyay", "party": "AITC", "partyColor": "#20C646", "votes": 523867, "margin": 145738, "turnout": "67.52%", "runner_up": "Rahul Sinha", "runner_up_party": "BJP" },
+    { "year": 2014, "winner": "Sudip Bandyopadhyay", "party": "AITC", "partyColor": "#20C646", "votes": 437892, "margin": 56712, "turnout": "72.45%", "runner_up": "Rahul Sinha", "runner_up_party": "BJP" }
+  ],
+  "pune-pc": [
+    { "year": 2024, "winner": "Murlidhar Mohol", "party": "BJP", "partyColor": "#FF9933", "votes": 612345, "margin": 124389, "turnout": "52.18%", "runner_up": "Ravindra Dhangekar", "runner_up_party": "INC" },
+    { "year": 2019, "winner": "Girish Bapat", "party": "BJP", "partyColor": "#FF9933", "votes": 678923, "margin": 203478, "turnout": "49.42%", "runner_up": "Mohan Joshi", "runner_up_party": "INC" },
+    { "year": 2014, "winner": "Anil Shirole", "party": "BJP", "partyColor": "#FF9933", "votes": 558432, "margin": 305645, "turnout": "52.78%", "runner_up": "Vishwajeet Kadam", "runner_up_party": "INC" }
+  ],
+  "ahmedabad-east-pc": [
+    { "year": 2024, "winner": "Hasmukhbhai Patel", "party": "BJP", "partyColor": "#FF9933", "votes": 723456, "margin": 412345, "turnout": "56.78%", "runner_up": "Qasim Siddiqui", "runner_up_party": "INC" },
+    { "year": 2019, "winner": "Hasmukhbhai Patel", "party": "BJP", "partyColor": "#FF9933", "votes": 698234, "margin": 378291, "turnout": "55.23%", "runner_up": "Gitaben Patel", "runner_up_party": "INC" },
+    { "year": 2014, "winner": "Harin Pathak", "party": "BJP", "partyColor": "#FF9933", "votes": 621345, "margin": 356782, "turnout": "58.11%", "runner_up": "Himmatsinh Patel", "runner_up_party": "INC" }
+  ]
+}
