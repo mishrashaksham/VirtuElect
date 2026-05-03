@@ -43,8 +43,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ── Security Hardening (Mock Rate Limiter) ─────────────────────────────────────
-// Demonstrates defensive API practices to prevent abuse.
+/**
+ * Security Hardening (Mock Rate Limiter)
+ * Demonstrates defensive API practices to prevent abuse.
+ *
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
+ * @param {import('express').NextFunction} next
+ * @returns {void|Object} Returns 429 response if rate limit exceeded.
+ */
 app.use((req, res, next) => {
   // In a real app, use express-rate-limit backed by Redis
   const rateLimitExceeded = false; 
@@ -54,7 +61,14 @@ app.use((req, res, next) => {
   next();
 });
 
-// ── Request Logger (dev only) ──────────────────────────────────────────────────
+/**
+ * Request Logger (dev only)
+ * Logs incoming HTTP requests.
+ *
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
+ * @param {import('express').NextFunction} next
+ */
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.path}`);
   next();
@@ -67,13 +81,28 @@ app.use('/api/translate',  require('./routes/translate'));
 app.use('/api/candidates', require('./routes/candidates'));
 app.use('/api/ai',         require('./routes/ai'));
 app.use('/api/chat',       require('./routes/chat'));
+app.use('/api/tts',        require('./routes/tts'));
 
-// ── 404 Handler ────────────────────────────────────────────────────────────────
+/**
+ * 404 Error Handler
+ * Catches all undefined routes and returns a 404 response.
+ *
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
+ */
 app.use((req, res) => {
   res.status(404).json({ error: 'not_found', message: `Route ${req.path} does not exist.` });
 });
 
-// ── Global Error Handler ───────────────────────────────────────────────────────
+/**
+ * Global Error Handler
+ * Catches unexpected server errors and prevents crashes.
+ *
+ * @param {Error} err
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
+ * @param {import('express').NextFunction} next
+ */
 app.use((err, req, res, next) => {
   console.error('[Server Error]', err.stack);
   res.status(500).json({ error: 'server_error', message: 'An unexpected error occurred.' });

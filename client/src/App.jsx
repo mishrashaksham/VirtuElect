@@ -5,6 +5,12 @@ import Home from './pages/Home';
 import ChatPage from './pages/ChatPage';
 import { useTranslate } from './context/TranslationContext';
 
+/**
+ * The main application component that sets up routing, themes, and global effects.
+ * Includes cursor aura tracking and scroll animations.
+ *
+ * @returns {React.ReactNode} The rendered Application.
+ */
 function App() {
   const { t } = useTranslate();
   const auraRef = useRef(null);
@@ -22,6 +28,11 @@ function App() {
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
 
+    /**
+     * Updates the custom cursor aura position based on mouse movement.
+     * 
+     * @param {MouseEvent} e - The mouse event object.
+     */
     const handleMouseMove = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
@@ -57,6 +68,9 @@ function App() {
       });
     }, observerOptions);
 
+    /**
+     * Scans the DOM for elements with the .scroll-animate class and observes them.
+     */
     const observeAll = () => {
       document.querySelectorAll('.scroll-animate:not(.is-visible)').forEach((el) => {
         intersectionObserver.observe(el);
